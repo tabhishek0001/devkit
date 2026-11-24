@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<meta name="description" content="Free browser-based developer tools for JSON, Base64, URL encoding, JWT, UUID, hashes, timestamps, regex, HTML entities and colors.">
+<title>DevKit — Developer Tools</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="./"><span class="brand-icon">&lt;/&gt;</span><span>dev<span class="brand-accent">kit</span><small>TOOLS FOR BUILDERS</small></span></a>
+<div class="top-right"><span class="privacy"><i></i> Runs in your browser</span><button id="themeToggle" class="icon-btn" title="Toggle theme" aria-label="Toggle theme">◐</button></div>
+</header>
+<main class="shell">
+<section class="hero"><div><p class="eyebrow">THE EVERYDAY DEVELOPER TOOLBOX</p><h1>Less busywork.<br><span>More building.</span></h1><p>Handy utilities for formatting, encoding, inspecting and testing — without sending your data to a server.</p></div><div class="hero-visual" aria-hidden="true"><div class="code-window"><div class="window-dots"><i></i><i></i><i></i></div><div class="code-lines"><span>const</span> build = () =&gt; {<br>&nbsp;&nbsp;ship(<b>"great things"</b>);<br>};<strong>▍</strong></div></div><div class="float-chip chip-one">{ }</div><div class="float-chip chip-two">01&nbsp; 10</div></div></section>
+<div class="app-layout">
+<aside class="sidebar"><div class="nav-label">DEVELOPER TOOLS</div><nav id="toolNav" aria-label="Developer tools">
+<button class="nav-item active" data-tool="json"><span>{ }</span>JSON formatter</button>
+<button class="nav-item" data-tool="base64"><span>B64</span>Base64</button>
+<button class="nav-item" data-tool="url"><span>↗</span>URL encoder</button>
+<button class="nav-item" data-tool="jwt"><span>JWT</span>JWT decoder</button>
+<button class="nav-item" data-tool="uuid"><span>⊹</span>UUID generator</button>
+<button class="nav-item" data-tool="hash"><span>⌗</span>Hash generator</button>
+<button class="nav-item" data-tool="timestamp"><span>◷</span>Timestamp</button>
+<button class="nav-item" data-tool="regex"><span>.*</span>Regex tester</button>
+<button class="nav-item" data-tool="html"><span>&lt;&gt;</span>HTML entities</button>
+<button class="nav-item" data-tool="color"><span>◉</span>Color converter</button>
+</nav><div class="sidebar-tip"><b>🔒 Local-first tools</b><p>Your input stays on this device. Avoid pasting secrets into any online tool, including this one.</p></div></aside>
+<section class="workspace"><div class="tool-head"><div><p class="eyebrow" id="toolGroup">DATA & FORMATTING</p><h2 id="toolTitle">JSON formatter</h2><p id="toolDesc">Format, minify and validate JSON data.</p></div><span id="toolCount" class="tool-count">01 / 10</span></div><div id="toolContent" class="tool-content"></div><div class="workspace-foot"><span>⌁ &nbsp; Processed locally in your browser</span><button id="clearBtn" class="link-btn">Clear / reset</button></div></section>
+</div>
+<section class="bottom-info"><div><span>⌘</span><div><b>Privacy by design</b><small>No backend processing or account required.</small></div></div><div><span>⚡</span><div><b>Instant results</b><small>Utilities run directly in your browser.</small></div></div><div><span>▧</span><div><b>Built for developers</b><small>Practical tools for everyday workflows.</small></div></div></section>
+<footer><span>© <span id="year"></span> DevKit</span><span>Small tools. Smoother workflows.</span><a href="https://github.com/tabhishek0001/devkit" target="_blank" rel="noopener">GitHub repository ↗</a></footer>
+</main>
+<script src="assets/js/app.js" defer></script>
+</body></html>
